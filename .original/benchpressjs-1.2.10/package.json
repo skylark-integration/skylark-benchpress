@@ -1,0 +1,106 @@
+{
+  "_from": "benchpressjs@^1.2.5",
+  "_id": "benchpressjs@1.2.10",
+  "_inBundle": false,
+  "_integrity": "sha512-z7We7fsEGIX0JBNwrf+NriFhTL6cpL+QQ6ggxXdhJWWRboLKfjEuHKt3uTdukz4dtbfEHYmpOK6IzzdLuBkSSw==",
+  "_location": "/benchpressjs",
+  "_phantomChildren": {
+    "commander": "2.19.0",
+    "source-map": "0.6.1"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "benchpressjs@^1.2.5",
+    "name": "benchpressjs",
+    "escapedName": "benchpressjs",
+    "rawSpec": "^1.2.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.2.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/benchpressjs/-/benchpressjs-1.2.10.tgz",
+  "_shasum": "4eda136396397cf3549e6a6a49374b427c6846de",
+  "_spec": "benchpressjs@^1.2.5",
+  "_where": "C:\\Studio\\studio2\\23_UTB\\skynode\\skynode-nodebb",
+  "author": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/benchpressjs/benchpressjs/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "babel-generator": "^6.26.1",
+    "babel-types": "^6.26.0",
+    "lodash": "^4.17.10",
+    "md5": "^2.2.1",
+    "node-cache": "^4.2.0",
+    "uglify-js": "^3.4.9"
+  },
+  "deprecated": false,
+  "description": "An ultralight and super fast templating framework",
+  "devDependencies": {
+    "async": "^2.6.2",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-check-es2015-constants": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoped-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-function-name": "^6.24.1",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.24.1",
+    "benchmark": "^2.1.4",
+    "coveralls": "^3.0.2",
+    "documentation": "^9.1.1",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "express": "^4.16.4",
+    "grunt": "^1.0.3",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-test": "^0.13.3",
+    "mkdirp": "^0.5.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.3.0",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "homepage": "https://github.com/benchpressjs/benchpressjs#readme",
+  "keywords": [
+    "templates",
+    "templating",
+    "framework",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "build/lib/benchpress",
+  "name": "benchpressjs",
+  "nyc": {
+    "exclude": [
+      "tests"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benchpressjs/benchpressjs.git"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "docs": "documentation build lib/benchpress.js lib/precompile.js lib/compile-render.js lib/express.js -f md -o docs/api.md --shallow",
+    "install": "cd rust/benchpress-rs && npm install",
+    "prepare": "grunt build uglify",
+    "prepublishOnly": "grunt",
+    "pretest": "grunt babel && eslint --cache .",
+    "test": "nyc --reporter=html --reporter=text mocha -R spec -- tests"
+  },
+  "version": "1.2.10"
+}
