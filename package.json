@@ -1,5 +1,5 @@
 {
-  "name": "skylark-jade",
+  "name": "skylark-benchpress",
   "description": "A version of benchpress.js that ported to running on skylarkjs",
   "version": "0.9.0",
   "keywords": [
@@ -27,7 +27,6 @@
   "skylarkjs": {
     "build": {
       "prepare": {
-        "cjstoamd": true
       }
     }
   },
