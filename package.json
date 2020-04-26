@@ -19,17 +19,19 @@
   "bugs": {
     "url": "https://github.com/skylark-integration/skylark-benchpress/issues"
   },
-  "files": ["examples/", "dist/", "src/","themes/"],
-  
+  "files": [
+    "examples/",
+    "dist/",
+    "src/",
+    "themes/"
+  ],
   "license": "MIT",
   "dependencies": {
-    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
-    "skylark-utils-dom": "git+https://github.com/skylarkutils/skylark-utils-dom.git#master"
+    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master"
   },
   "skylarkjs": {
     "build": {
-      "prepare": {
-      }
+      "prepare": {}
     }
   },
   "engines": {
