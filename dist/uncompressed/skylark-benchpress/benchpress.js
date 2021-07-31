@@ -1,5 +1,5 @@
 define([
-  "skylark-langx/skylark"
+  "skylark-langx-ns"
 ],function (skylark) {
   var runtime = function () {
     'use strict';

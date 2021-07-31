@@ -1,1 +1,0 @@
-{"version":3,"sources":["main.js"],"names":["define","benchpress"],"mappings":";;;;;;;AAAAA,QACC,gBACC,SAASC,GAEV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n\t\"./benchpress\"\r\n],function(benchpress) {\r\n\r\n\treturn benchpress;\r\n});"]}
